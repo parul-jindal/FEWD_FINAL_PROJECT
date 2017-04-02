@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Cocktail Connoisseur</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans:300,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="top-bar"></div>
+		<div class="logo"></div>
+	</header>
+	<!--   User Info content begins-->
+	<h1>The Cocktail Connoisseur</h1>
+	<div class="steps-container">
+		<div id="back-button" class="step-back-button fab white">
+			<div>&#x27A6;</div>
+		</div>
+		<div class="steps">
+			<div class="step">
+				<section id="introduction">
+					<h2>Are you having<br>one of those nights<br>where you<br>just don't know<br>What To Drink?<br></h2>
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off" id="welcome-button">
+              Let me decide for you!
+          </button>
+				</section>
+			</div>
+			<div class="step">
+				<section id="basic-info">
+					<h2>Before we go any further</h2>
+					<h3>Who are you...</h3>
+					<div id="gender">
+						<div class="gender-selector female" id='woman'></div>
+						<p>or a</p>
+						<div class="gender-selector male" id='man'></div>
+					</div>
+
+					<h3>Your drinking habits...</h3>
+					<div id="drinking-habit" class="drop-down-selector" tabindex="1">
+						<span>...</span>
+						<ul class="dropdown">
+							<li><a href="#"><i class="icon-envelope icon-large"></i>Barely Legal</a></li>
+							<li><a href="#"><i class="icon-truck icon-large"></i>Getting the hang of it</a></li>
+							<li><a href="#"><i class="icon-plane icon-large"></i>I know what I am doing</a></li>
+							<li><a href="#"><i class="icon-plane icon-large"></i>Practice made Perfect</a></li>
+						</ul>
+					</div>
+
+					<h3>How much can you spend...</h3>
+					<div class="Budget">
+						<div class="btn-group" data-toggle="buttons">
+							<label class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Cheap">
+                  <input type="radio" name="Budget" id="option1" autocomplete="off" checked value="$">$
+                </label>
+							<label class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Pricy">
+                  <input type="radio" name="Budget" id="option2" autocomplete="off" value="$$">$$
+                </label>
+							<label class="btn btn-default" data-toggle="tooltip" data-placement="top" title="High end">
+                  <input type="radio" name="Budget" id="option3" autocomplete="off" value="$$$">$$$
+                </label>
+						</div>
+					</div>
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off" id="begin-button">
+              Let's Begin
+            </button>
+					<div class="error">Please fill all fields</div>
+				</section>
+			</div>
+			<!--  User Info content ends-->
+			<!--   Occasion content begins-->
+			<div class="step">
+				<section id="occasion">
+					<h3>What's the Occasion?</h3>
+					<div class="occasion-content">
+						<input class="occasion-selector occasion-date" type="radio" name="occasions" value="Date" />
+						<input class="occasion-selector occasion-business" type="radio" name="occasions" value="Business" />
+						<input class="occasion-selector occasion-weekend" type="radio" name="occasions" value="Weekend" />
+						<input class="occasion-selector occasion-event" type="radio" name="occasions" value="Event" />
+					</div>
+				</section>
+			</div>
+			<!--   Occasion content ends-->
+			<!--   user preference content begins-->
+			<div class="step">
+				<section id="user-preference">
+					<h3>How do you like it?</h3>
+					<div id="drink-type" class="drop-down-selector" tabindex="1">
+						<span>...</span>
+						<ul class="dropdown">
+							<li><a href="#"><i class="icon-envelope icon-large"></i>Dark</a></li>
+							<li><a href="#"><i class="icon-truck icon-large"></i>Flavored</a></li>
+							<li><a href="#"><i class="icon-plane icon-large"></i>Mellow</a></li>
+							<li><a href="#"><i class="icon-plane icon-large"></i>Neat</a></li>
+						</ul>
+					</div>
+
+					<h3>Any flavor preferences?</h3>
+					<div id="flavor-type" class="drop-down-selector" tabindex="1">
+						<span>...</span>
+						<ul class="dropdown">
+							<li><a href="#"><i class="icon-envelope icon-large"></i>Fruit</a></li>
+							<li><a href="#"><i class="icon-truck icon-large"></i>Chocolate</a></li>
+							<li><a href="#"><i class="icon-plane icon-large"></i>Sweet</a></li>
+							<li><a href="#"><i class="icon-plane icon-large"></i>I don't care</a></li>
+						</ul>
+					</div>
+
+					<h3>How do you want yourself to be perceived?</h3>
+					<div id="perception-type" class="drop-down-selector" tabindex="1">
+						<span>...</span>
+						<ul class="dropdown">
+							<li><a href="#"><i class="icon-envelope icon-large"></i>Flirty</a></li>
+							<li><a href="#"><i class="icon-truck icon-large"></i>Aloof</a></li>
+							<li><a href="#"><i class="icon-plane icon-large"></i>Confident</a></li>
+							<li><a href="#"><i class="icon-plane icon-large"></i>Cocky</a></li>
+							<li><a href="#"><i class="icon-plane icon-large"></i>I just want to drink</a></li>
+						</ul>
+					</div>
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off" id="show-results">
+              See what you got!
+            </button>
+					<div class="error">Please fill all fields</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class="loader main-loader"></div>
+	<!--   user preference content ends -->
+	<div id="results">
+		<h3>Pick your Poison and have fun!</h3>
+		<div id="shown-results"></div>
+		<button id='start-over' class="fab blue">&#x21ba;</button>
+	</div>
+	<footer>
+		Designed and made by Parul Jindal&reg;
+	</footer>
+	<script src="js/jquery-2.1.3.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
