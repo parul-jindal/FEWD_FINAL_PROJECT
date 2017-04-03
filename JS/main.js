@@ -236,6 +236,16 @@ $().ready(function() {
             description: 'Blah blah black sheep have you any wool',
             image: "Absolut_vodka.jpg"
         }));
+         $("#shown-results").append(renderResultRow(2, {
+            header: 'Whickey',
+            description: 'Blah blah black sheep have you any wool',
+            image: "Absolut_vodka.jpg"
+        }));
+         $("#shown-results").append(renderResultRow(3, {
+            header: 'Whickey',
+            description: 'Blah blah black sheep have you any wool',
+            image: "Absolut_vodka.jpg"
+        }));
         $('#results').show();
     }
 
