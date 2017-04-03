@@ -228,22 +228,22 @@ $().ready(function() {
         $("#shown-results").empty();
         $("#shown-results").append(renderResultRow(0, {
             header: 'Vodka',
-            description: 'Blah blah black sheep have you any wool',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
             image: "Absolut_vodka.jpg"
         }));
         $("#shown-results").append(renderResultRow(1, {
-            header: 'Whickey',
-            description: 'Blah blah black sheep have you any wool',
+            header: 'Whiskey',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
             image: "Absolut_vodka.jpg"
         }));
          $("#shown-results").append(renderResultRow(2, {
-            header: 'Whickey',
-            description: 'Blah blah black sheep have you any wool',
+            header: 'Vodka',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  ',
             image: "Absolut_vodka.jpg"
         }));
          $("#shown-results").append(renderResultRow(3, {
-            header: 'Whickey',
-            description: 'Blah blah black sheep have you any wool',
+            header: 'Whiskey',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
             image: "Absolut_vodka.jpg"
         }));
         $('#results').show();
