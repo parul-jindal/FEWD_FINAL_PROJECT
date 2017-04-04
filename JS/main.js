@@ -251,7 +251,7 @@ $().ready(function() {
 
     function showResults() {
         $('.steps-container').fadeOut(200, function() {
-            $('.main-loader').show().delay(1000).hide(function() {
+            $('.main-loader').show().delay(2000).hide(function() {
                 showWeekendResults();
             });
         });
