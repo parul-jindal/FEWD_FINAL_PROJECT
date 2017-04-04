@@ -455,7 +455,9 @@ footer {
     align-items: flex-start;
     font-size: 15px;
     max-width: 420px;
+    text-align: left;
 }
+
 
 .result-text-box-right {
     display: flex;
@@ -463,7 +465,10 @@ footer {
     align-items: flex-end;
     font-size: 15px;
     max-width: 420px;
+    text-align: right;
 }
+
+
 
 .text-header {
     font-size: 20px;
@@ -471,6 +476,6 @@ footer {
 
 .error {
     font-style: italic;
-    ;
     color: red;
+    padding-top: 10px;
 }

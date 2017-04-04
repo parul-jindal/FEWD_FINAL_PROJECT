@@ -214,8 +214,8 @@ $().ready(function() {
             'transition-delay': index * 200 + 'ms',
             '-webkit-animation-delay': index * 200 + 'ms'
         }).append($('<div>').addClass(index % 2 === 0
-            ? 'result-text-box'
-            : 'result-text-box-right').append(header).append(desc));
+                                      ? 'result-text-box'
+                                      : 'result-text-box-right').append(header).append(desc));
         if (index % 2 === 1) {
             item.prepend(image);
         } else {
@@ -227,24 +227,24 @@ $().ready(function() {
     function showWeekendResults() {
         $("#shown-results").empty();
         $("#shown-results").append(renderResultRow(0, {
-            header: 'Vodka',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-            image: "Absolut_vodka.jpg"
+            header: 'CHERRY BLUEBERRY APPLE SANGRIA',
+            description: 'This blushing sangria recipe includes apples, blueberries, and juicy cherries and is perfect for a relaxing brunch or summerly events like concert series, bbqs, or movies in the park.',
+            image: "Cherry-Blueberry-Apple-Sangria.jpg"
         }));
         $("#shown-results").append(renderResultRow(1, {
-            header: 'Whiskey',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-            image: "Absolut_vodka.jpg"
+            header: 'PEACH MOON WITH ORANGE JUICE',
+            description: 'If you are a beer person, try this cocktail that uses Blue Moon with peach schnapps for the added twist. If you really love peach flavours, try it with peach juice instead of orange',
+            image: "Peach-Moon-Orange-Juice.jpg"
         }));
-         $("#shown-results").append(renderResultRow(2, {
-            header: 'Vodka',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  ',
-            image: "Absolut_vodka.jpg"
+        $("#shown-results").append(renderResultRow(2, {
+            header: 'BLUEBERRY VODKA MARTINI',
+            description: 'A fresh take on a classic, a Blueberry Martini is one of the best fruit infused martinis. This one not only looks but also tastes exotic.',
+            image: "Vodka-Martini-Blueberry.jpg"
         }));
-         $("#shown-results").append(renderResultRow(3, {
-            header: 'Whiskey',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-            image: "Absolut_vodka.jpg"
+        $("#shown-results").append(renderResultRow(3, {
+            header: 'SPARKLING APPLE JUICE COCKTAIL',
+            description: 'If you are in the mood for some apple cider - a pairing with warm cinnamon, simple fruit juices and sparkling wine are good places to start.',
+            image: "Sparkling-Apple-Juice-Cocktail.jpg"
         }));
         $('#results').show();
     }
