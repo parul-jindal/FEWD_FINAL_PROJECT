@@ -182,7 +182,7 @@ $().ready(function() {
     $('#start-over').click(function() {
         $('.steps-container').show();
         $('#results').hide();
-        steps.slideTo(0);
+        steps.slideTo(1);
     });
 
     $('#woman').on('click', function() {
